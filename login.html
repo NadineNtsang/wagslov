@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title >Find Puppies for our family|WagLovers</title>
+    <link rel="icon" href="New Project (7).png" width="100px">
+</head>
+<body id="home">
+    <div class="available">Call us between 8AM-Midnight Est everyday!</div>
+    <div class="header" id="head">
+      <div class="mybar" id="nav-nav">
+          <a class="navbar-brand" ><img src="New Project (6).png" alt="" width="80px"></a>
+          </a>
+            <a href="index.html" class="active">HOME</a>
+            <a href="browsepuppies.html">Available Puppies</a>
+            <a href="login.html">Login</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+         
+           
+              <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                  </a>
+          </div>
+          <div class="contact">
+            <i class="fi fi-brands-whatsapp"></i><a href="https://wa.me/6785512562" style="color: rgb(116, 38, 126);"></i>(678) 551-2562</a>
+         </div>  
+       </div>
+    <div class="row g-0 bg-body-secondary position-relative">
+        <h2>
+            Discover, learn about, and find your new puppy!
+        </h2>
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="https://img.freepik.com/free-vector/flat-illustration-people-with-pets_23-2148988052.jpg?w=740&t=st=1702549093~exp=1702549693~hmac=94d1412ed3354b624c3d48b5134c95e6b71cf6cfb98b4db0e02fbdf45282dd62" class="w-100" alt="">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+            <form class="login-page-form">
+                 <h3 class="login-title">Log in to WagLovers</h3>
+                 <div class="col">
+                  <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                   </a>
+                  <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                    </i> Login with Google+
+                  </a>
+                </div>
+                <h2 style="">OR</h2>
+                <form acton="l" method="">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" type="email" pattern="[^@]+@([a-zA-Z0-9\-]+\.)+[a-zA-Z0-9\-]+"name="email" data-name="Email Address" data-validate="required,email" required >
+                  <div id="emailHelp" class="form-text"></div>
+  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" required>
+                  <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember me?</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+              </form>
+        </p>
+        </div>
+      </div>
+      <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            this.classList.toggle("bi-eye");
+        });
+
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+    </script>
+      <script src="index.js"></script>
+    </body>
+    </html>
